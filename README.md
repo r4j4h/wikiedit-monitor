@@ -2,6 +2,16 @@
 
 **wikiedit-monitor** logs Wikipedia activity live to a database and performs analysis on that data.
 
+## Dockerfile
+
+This Dockerfile is geared towards aiding one running editlog.js.
+
+When running the container, pass connection information via environment variables, or by using the default `db` link name
+with default mongo port and the script will start and will run data.
+
+Manually running the other scripts is possible and shell scripts are provided.
+
+
 Project goals:
 * Obtaining a proper diff of administrative revision deletes
 * Detecting edit wars, as they happen
